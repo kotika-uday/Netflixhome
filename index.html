@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="styles.css">
+ <title>Netflix</title>
+</head>
+<style>
+.a {
+        padding: 60px;
+        transition: transform .2s; 
+        width: 300px;
+        height: 20px;
+        margin: 0 auto;
+      }
+      .a:hover {
+        transform: scale(1.4); 
+     }
+     @media (max-width: 600px) {
+       .plans {
+          flex-direction: column;
+       }
+      }
+input{
+
+  height: 4rem;
+  width: 35rem;
+  border-radius: 5%;
+  background-origin: padding-box;
+  border-color: #09e509;
+}
+button {
+ height: 4rem;
+ width:10rem;
+background-color: #09e526;
+border:none;
+border-radius: 5%;
+}
+button:hover{
+  background-color:chartreuse;
+}
+.plans {
+       display: flex;
+       justify-content: center;
+       padding: 50px;
+      }
+     
+      .plan {
+       background-color: #1c1a1a;
+       color: #fff;
+       padding: 50px;
+      margin: 5px;
+       width: 600px;
+       text-align: center;
+       border-radius: 5%;
+      }
+      img {
+       padding: 50px;
+       transition: transform .2s; /* Animation */
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+      }
+     
+     
+      img:hover {
+     transform: scale(1.4); 
+    }
+   
+  h3 {
+text-align: end;
+justify-content: space-between;
+padding-right: 50px;
+font-size: 20px;
+color: #fff;
+}
+
+h3:hover {
+  color: #e50914; 
+} 
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(https://repository-images.githubusercontent.com/569658755/414cf8c4-661f-468e-a950-73a13bc6837a);
+  filter: brightness(70%);
+  z-index: -1; 
+}
+
+
+
+</style>
+
+<body>
+<h1 style="color: #e50914;" style="font-size: 10cm;">NETFLIX</h1>
+
+<div class="header">
+  <h3>HOME &nbsp;&nbsp;LOGIN &nbsp;&nbsp;ABOUT</h3>
+ <br><br><br><br>
+ <center>
+  <form id="signin-form">
+    <div>
+    <input type="email" placeholder="enter the email..." id="email" name="email" required >
+    <button type="submit" style="color: #2309e5;" >SIGN IN</button>
+  </div> </form>
+        </center>
+<br><br><br><br><br><br><br>
+        <div class="plans">
+          <div class="plan">
+           <h2>HOMEFRONT</h2>
+            <img src="https://th.bing.com/th/id/OIP.s-_hjJdIYuaBw6hUvJSQigHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="100%" id="a">
+            <p>Based on the novel of the same name by Chuck Logan, Homefront is available to watch on Netflix. It falls into the action-thriller genre and was filmed primarily in New Orleans.</p>
+            <p>$7/month/</p>
+          </div>
+          <div class="plan">
+            <h2>LUPIN</h2>
+            <img src="https://geekvibesnation.com/wp-content/uploads/2021/03/1366_2000.jpeg" alt="" width="100%" height="70%" id="a">
+            <p>Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.</p>
+            <p>$13/month/</p>
+          </div>
+       </div>
+       <center>
+        <p style="color: #fff;" >Frequently asked questions?</p>
+         <p style="color: #fff;">what is netflix?
+         </p>
+         <p style="color: #fff;">how much does netflix cost?</p>
+         <p style="color: #fff;">wher to watch?</p
+      </center> 
+      <script src="script.js"></script>
+</body>
+</html>
